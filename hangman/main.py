@@ -18,6 +18,9 @@ def hangman():
 
     # getting user input 
     while len(word_letters) > 0:
+
+        # letters used 
+        print('You have used these letters: ', ' '.join(used_letters))
         user_letter = input("Guess a letter: ").upper()
 
         if user_letter in alphabet - user_letters: 
